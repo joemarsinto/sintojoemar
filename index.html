@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400;1,500;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body >
+    
+    <section class="header">
+        
+        <nav>
+            <a href="index.html"><img src="img/buksu-logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li class="current"><a href="index.html">Home Page</a></li>
+                    <li><a href="blogs.html">IT111 Blogs Page</a></li>
+                    <li><a href="flex.html">Flex Page</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>Welcome to My Personal Website</h1>
+        <p>Explore to know more about me</p>
+        <a href="https://buksu.edu.ph/" class="hero-btn">Visit to my University</a>
+    </div>
+
+    </section>
+
+<!--self-intro-->
+<section class="self-intro">
+    <h1>Self Introduction</h1>
+    <p>Hello everyone! this Joemar L. Sinto, proud to be one of BSEMC-DAT students. I'm just a tech newbie, curious about creating and coding to this website, I just want you to know a little more about me.</p>
+</section>
+
+<!--hobbies-skills-->
+
+<section id="box">
+    <div class="row">
+        <div class="self-col">
+            <h3>My Hobbies</h3>
+            <ul>
+                <li>Playing online games</li>
+                <br>
+                <li>singing</li>
+                <br>
+                <li>Workout Activities</li>
+                <br>
+                <li>Martial Arts Sports</li>
+                <br>
+                <li>Watching Kdrama</li>
+                <br>
+                <li>Read Wattpad (HORROR, MYSTERY, THRILLER CATEGORY ONLY) </li>
+                <br>
+                <li>Outdoor Activities</li>
+                <br>
+                <li>Videography and Editing</li>
+                <br>
+                <li>Playing guitar (fingerstyle)</li>
+                <br>
+                <li>Artworks: sketching, charcoal portrait, illustration arts</li>
+            </ul>
+
+        </div>
+        <div class="self-col">
+            <h3>My Skills</h3>
+            <ul>
+                <li>Self control</li>
+                <br>
+                <li>Multitasking</li>
+                <br>
+                <li>Hide emotion</li>
+                <br>
+                <li>Confidence</li>
+                <br>
+                <li>Creativity</li>
+                <br>
+                <li>Observing people's body language</li>
+            </ul>
+
+        </div>
+        <div class="self-col">
+            <h3>My Interest</h3>
+            <img src="img/Interest (2).jpg" alt="My Interest Image">
+            <li><i>TERRORS</i></li>
+        </div>
+
+    </div>
+
+</section>
+
+<!--social media links-->
+<section class="social">
+    <h1>My Social Media Contacts</h1>
+    <div class="social-media-links">
+        
+        <div class="facebook">
+            <a href="" target="_blank">
+                <img src="img/fblogo.png" alt="Facebook">
+            </a>
+            <p class="tagline-fb">Join the Conversation: Follow on Facebook</p>
+        </div>
+        
+        <!-- Add more social media items as needed -->
+    </div>
+
+</section>
+
+<!--infographics-->
+
+<section class="infographics">
+    <h1>My Goal 8 years from now</h1>
+    <div class="container">
+        <div class="infographic1">
+          <div class="year">
+            <span class="icon">📚</span>
+            <p>I'm in process to achieve and to have successful goal 8 years from now, first, building myself to be a high quality man, finish school, achieve my dream work, have my own properties, and lastly have a happy family</p>
+          </div>
+        </div>
+    </div>
+
+</section>
+
+<!--fotter-->
+<section class="fotter">
+    <h3>Joemar L. Sinto T248 (INTRO TO COMPUTING)</h3>
+</section>
+
+    
+    <!--JavaScript for Toggle Menu -->
+    <script>
+
+        var naLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+</body>
+</html>

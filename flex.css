@@ -1,0 +1,381 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('img/flexss.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+body, html{
+    overflow-x: hidden;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a {
+    color: aqua;
+    flex-wrap: wrap;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #e7756d;
+    display: block;
+    margin: auto;
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+.text-box {
+    width: 90%;
+    color: aqua;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1 {
+    font-size: 62px;
+}
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: aqua;
+}
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: aqua;
+    border: 1px solid #eee9e9;
+    border-radius: 8px;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover {
+    border: 1px solid #8a514d;
+    background: #8a514d;
+    transition: 1s;
+}
+nav .fa {
+    display: none;
+}
+@media (max-width: 700px){
+    .text-box h1 {
+        font-size: 30px;
+    }
+    .nav-links ul li {
+       display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #e7756d;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: rgb(253, 251, 251);
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+
+    }
+
+}
+/*----flex---*/
+/* Style for the Electrical Installation and Maintenance section */
+/* Style for the Electrical Installation and Maintenance section */
+.elect {
+    text-align: center;
+    margin: 20px;
+}
+
+.elect h1 {
+    font-size: 40px;
+    line-height: 1.2em;
+    color: #fcf9f9; /* Set your desired text color */
+    border: 1px solid #eee9e9;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.elect h1:hover {
+    background-color: #e7756d;
+    transition: 1s;
+}
+
+.elect-pic {
+    display: flex;
+    justify-content: space-around ;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+}
+.elect-pic p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #faf7f7; /* Set your desired text color */
+    margin-bottom: 15px;
+    border: 1px solid #161616;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.elect-pic p:hover {
+    background-color: rgb(32, 34, 34);
+    transition: 1s;
+}
+.elect-pic img {
+    width: 35%; /* Adjust the width as needed */
+    height: 50%;
+    border: 2px solid #830c04; /* Set your desired border color */
+    border-radius: 30px; /* Set your desired border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out; /* Add a transition for a smooth effect */
+
+}
+.elect-pic img:hover {
+    transform: scale(1.05);
+}
+
+/* Style for the Certified CCTV Technician section */
+.cctv {
+    text-align: center;
+    margin: 20px;
+}
+
+.cctv h1 {
+    font-size: 40px;
+    line-height: 1.2em;
+    color: #fcf9f9; /* Set your desired text color */
+    border: 1px solid #eee9e9;
+    border-radius: 10px;
+    background-color: transparent;
+    
+}
+.cctv h1:hover {
+    background-color: #e7756d;
+    transition: 1s;
+}
+.cctv-pic {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.text-box2{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.text-box2 p {
+    width: 90%;
+    padding: 10px;   
+    font-size:18px;
+    
+    line-height: 1.6;
+    color: #faf7f7; /* Set your desired text color */
+    margin-bottom: 15px;
+    border: 1px solid #161616;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.text-box2 p:hover {
+    background-color: rgb(32, 34, 34);
+    transition: 1s;
+}
+
+.cctv-pic img {
+    width: 20%; /* Adjust the width as needed */
+    border: 2px solid #034286; /* Set your desired border color */
+    border-radius: 30px; /* Set your desired border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.cctv-pic img:hover {
+    transform: scale(1.05);
+   
+
+}
+@media (width: 850px){
+    .cctv-pic img {
+        width: 10% auto;
+        justify-content: center;
+    }
+    .cctv-pic img:hover{
+        scale: (1, 5);
+    }
+    .text-box2{
+        width: 30px;
+    }
+    .text-box2 p {
+        width: 5px;
+        left: 2px;
+        font-size:8px;
+        color: #faf7f7; /* Set your desired text color */
+        
+    }
+}
+
+/*----WebDev-----*/
+.webdev h1 {
+    width: 60%;
+    left: 15%;
+    font-size: 40px;
+    position: relative;
+    text-align: center;
+    padding: 2px;
+    line-height: 1.2em;
+    color: #fcf9f9; /* Set your desired text color */
+    border: 1px solid #eee9e9;
+    border-radius: 10px;
+    background-color: transparent;
+    
+}
+.webdev h1:hover {
+    background-color: #e7756d;
+    transition: 1s;
+}
+.devwed p {
+    width: 90%;
+    padding: 10px;
+    left: 2%;   
+    font-size: 18px;
+    position: relative;
+    line-height: 1.6;
+    color: #faf7f7; /* Set your desired text color */
+    margin-bottom: 15px;
+    border: 1px solid #161616;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.devwed p:hover {
+    background-color: rgb(32, 34, 34);
+    transition: 1s;
+}
+@media only screen and (max-width: 768px){
+    .row{
+        flex-direction: column;
+    }
+}
+/* Styles for ROTC Section */
+.rotc {
+    background-color: transparent; /* Light gray background color */
+    padding: 50px 0; /* Add padding to the section */
+  }
+.rotc h1 {
+    width: 50%;
+    font-size: 40px;
+    line-height: 1.2em;
+    text-align: center;
+    color: #fcf9f9; /* Set your desired text color */
+    border: 1px solid #eee9e9;
+    border-radius: 10px;
+    background-color: transparent;
+
+}
+  .rotc h1:hover {
+    background-color: #e7756d;
+    transition: 1s;
+  }
+  .rotc-pic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .rotc-pic img {
+    max-width: 300px; /* Limit image width */
+    margin: 10px; /* Add margin around images */
+    border: 2px solid #ddd; /* Add a light gray border */
+    border-radius: 8px; /* Add rounded corners */
+  }
+  .rotc-pic img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .rotc-pic p {
+    width: 90%;
+    padding: 10px;
+    left: 2%;   
+    font-size: 18px;
+    position: relative;
+    line-height: 1.6;
+    color: #faf7f7; /* Set your desired text color */
+    margin-bottom: 15px;
+    border: 1px solid #161616;
+    border-radius: 10px;
+    background-color: transparent;
+    
+  }
+  .rotc-pic p:hover {
+    background-color: #161616;
+    transition: 1s;
+  }
+  
+  .rotc-pic a {
+    color: #0066cc; /* Set link color to a shade of blue */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Make links bold */
+  }
+  
+  .rotc-pic a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  /*fotter*/
+.fotter {
+    width: 97%;
+    margin: auto;
+    text-align: center;
+    padding-top: 5px;
+    box-shadow: #070707;
+    background: rgb(241, 232, 232);
+    border-radius: 8px;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.1);
+  }

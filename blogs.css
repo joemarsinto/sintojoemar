@@ -1,0 +1,296 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/it111.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.header img {
+    border-radius: 50%; /* Make the image round */
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    align-items: center;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a {
+    color: aqua;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #e7756d;
+    display: block;
+    margin: auto;
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+.it111 {
+    width: 90%;
+    color: aqua;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.it111 {
+    font-size: 60px;
+}
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: aqua;
+}
+nav .fa {
+    display: none;
+}
+@media (max-width: 700px){
+    .it111 {
+        font-size: 30px;
+    }
+    .nav-links ul li {
+       display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #e7756d;
+        height: 100vh;
+        width: 190px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: rgb(253, 251, 251);
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+
+    }
+
+}
+/*----blog1---*/
+
+.blog1 {
+    background-color: #e0dbdbe5;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(7, 0, 0, 0.1);
+    margin: 20px;
+}
+
+h1 {
+    color: #080808;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+h5 {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.statement {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.statement p {
+    margin-bottom: 15px;
+}
+
+.statement b em {
+    color: #007BFF;
+}
+
+.statement a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.statement a:hover {
+    text-decoration: underline;
+}
+
+/* Style for the conclusion */
+.statement p:last-child {
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .blog1 {
+        width: 90%;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+    .statement {
+        font-size: 10px;
+    }
+}
+
+/*---output and learnings----*/
+
+.learnings {
+    margin: 20px;
+}
+
+.infog {
+    width: 30%;
+    right: 30%;
+    margin: auto;
+    position:relative;
+    text-align: center;
+    padding-top: 5px;
+    background: #ee5b48;
+    border: 1px solid #3b0202;
+    border-radius: 8px;
+    margin-bottom: 2px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.infog:hover {
+    background-color: #e7756d;
+    right: 50%;
+    transition: background-color 1s;
+}
+
+.activity {
+    width: 25%;
+    margin: auto;
+    right: 100%;
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    padding-top: 10px; /* Adjust the padding as needed */
+    background: #ff9657;
+    border: 1px solid #3b0202;
+    border-radius: 8px;
+    margin-bottom: 10px; /* Adjust the margin as needed */
+    top: 51px; /* Adjust the top value to move it down */
+}
+
+.activity:hover {
+    background-color: #e7756d;
+    transition: background-color 1s;
+}
+
+.pptslide {
+    width: 25%;
+    margin:auto;
+    right:30%;
+    font-size: 24px;
+    font-weight: 600;
+    position:relative;
+    text-align: center;
+    padding-top: 10px;
+    background: #ff9657;
+    border: 1px solid #3b0202;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.pptslide:hover {
+    background-color: #e2aba7;
+    transition: background-color 1s;
+}
+
+.ppt {
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+}
+
+iframe {
+    width: 69%;
+    height: 126vh;
+    position: absolute;
+    right: 3px;
+}
+
+@media (max-width: 768px) {
+    .infog,
+    .activity,
+    .pptslide {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .ppt {
+        width: 90%;
+    }
+}
+.lesson {
+    margin: 20px;
+    text-align: center;
+}
+
+.like {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333; /* Set your desired text color */
+}
+
+/*fotter*/
+.fotter {
+    width: 97%;
+    margin: auto;
+    text-align: center;
+    padding-top: 5px;
+    box-shadow: #070707;
+    background: rgb(241, 232, 232);
+    border-radius: 8px;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.1);
+  }
